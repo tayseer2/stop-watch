@@ -1,0 +1,60 @@
+body {
+  background-color: #0f0e17;
+  font-family: "Courier Prime", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.stopwatch {
+  width: 100%;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #2e2f3e;
+  padding: 50px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.stopwatch h1 {
+  color: white;
+  font-size: 70px;
+  margin: 0 0 20px 0;
+}
+
+.btns {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.btns img {
+    width: 85px;
+    margin: 0 20px;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+.btns img:nth-child(2) {
+    width: 100px;
+    transform: translateY(-0.5px);
+}
+
+
+@media (max-width: 768px) {
+    .stopwatch {
+        width: 90%;
+    }
+    .stopwatch h1 {
+        font-size: 50px;
+    }
+    .btns img {
+        width:  60px;
+    }
+    .btns img:nth-child(2) {
+        width: 70px;
+    }
+}
